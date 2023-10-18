@@ -1,0 +1,1 @@
+// 只有第一个调用显示 Rabbit，其他的都显示的是 undefined
