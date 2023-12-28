@@ -1,7 +1,8 @@
 ; 练习2
 ; 
-; 编写函数(my-copy-file)实现文件的拷贝。
+; 1. 编写函数(my-copy-file)实现文件的拷贝。
 
+; 1
 ; (define (my-copy-file from to)
 ;   (let ((pfr (open-input-file from))
 ;     (pto (open-output-file to)))

@@ -2,10 +2,11 @@
 ; 
 ; 用命名let编写下面的函数。
 ; 
-; 练习1的问题3和问题4；
-; 练习2中的函数；
-; range函数：返回一个从0到n的表（但不包含n）。
+; 1. 练习1的问题3和问题4；
+; 2. 练习2中的函数；
+; 3. range函数：返回一个从0到n的表（但不包含n）。
 
+; 1
 (define (remove x ls)
     (let loop((ls0 ls) (ls1 '()))
         (if (null? ls0) 
@@ -25,6 +26,7 @@
             ((eqv? x (car ls0)) i)
             (else (loop (cdr ls0) (1+ i))))))
 
+; 2
 (define (my-reverse ls)
     (let loop((ls0 ls) (ls1 '()))
         (if (null? ls0)
@@ -43,12 +45,12 @@
             n
             (loop (cdr ls) (+ (- (char->integer (car ls)) 48) (* n 10) )))))
 
+; 3
 (define (range n)
     (let loop((ls '()) (n1 0))
         (if (= n n1)
             ls ; 使用 reverse 能让 '((((((((((() . 0) . 1) . 2) . 3) . 4) . 5) . 6) . 7) . 8) . 9) 变成 '(0 1 2 3 4 5 6 7 8 9)
             (loop (cons ls n1) (1+ n1) ))))
-
 ; (define (range n)
 ;   (let loop((i 0) (ls1 '()))
 ;     (if (= i n)

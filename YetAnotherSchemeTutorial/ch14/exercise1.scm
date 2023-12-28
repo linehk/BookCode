@@ -1,7 +1,8 @@
 ; 练习1
 ; 
-; 编写一个用于计算两向量内积的函数。
-; 
+; 1. 编写一个用于计算两向量内积的函数。
+
+; 1
 ; (define (inner-product vec1 vec2)
 ;   (let ((len1 (vector-length vec1))
 ;           (len2 (vector-length vec2)))

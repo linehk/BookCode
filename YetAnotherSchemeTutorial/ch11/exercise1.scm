@@ -1,12 +1,11 @@
 ; 练习1
 ; 
-; 编写一个函数title-style，该函数用于将每个单词的首字母大写。
+; 1. 编写一个函数title-style，该函数用于将每个单词的首字母大写。
 ; 
 ; (title-style "the cathedral and the bazaar")
 ; ;⇒ "The Cathedral And The Bazaar"
 
-(define (identity x) x)
-
+; 1
 ; (define (title-style str)
 ;   (let loop ((ls (string->list str))
 ;          (w #t)
